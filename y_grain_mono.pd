@@ -90,7 +90,7 @@
 #X obj 645 15 r \$2-sample_offset;
 #X obj 676 173 r \$2-offset_random;
 #X obj 789 324 r \$2-grainsize;
-#X obj 1012 302 r \$2-reset_pitch;
+#X obj 1038 286 r \$2-reset_pitch;
 #X obj 1061 177 r \$2-pitch_range;
 #X obj 1012 141 r \$2-grain_pitch;
 #X obj 903 178 r \$2-random_pitch;
