@@ -76,7 +76,7 @@
 #X msg 1021 358 1;
 #X obj 464 74 r \$2-reverse_random;
 #X obj 333 158 r \$2-reverse;
-#X obj 198 351 r \$2-grainsize;
+#X obj 198 337 r \$2-grainsize;
 #X obj 318 350 r \$2-grainsize;
 #X obj 437 337 r samplerate;
 #X obj 437 358 / 1000;
@@ -88,9 +88,9 @@
 #X obj 1061 177 r \$2-pitch_range;
 #X obj 1012 141 r \$2-grain_pitch;
 #X obj 903 178 r \$2-random_pitch;
-#X obj 262 746 tabread4~ \$2-poly_grain-L;
+#X obj 263 784 tabread4~ \$2-poly_grain-L;
 #X obj 317 819 r \$2-volume;
-#X obj 247 937 throw~ \$2-grainoutL;
+#X obj 311 1047 throw~ \$2-grainoutL;
 #X obj 652 358 r \$2-samplelength;
 #X obj 56 630 tabread~ \$2-crown;
 #X obj 899 226 t b f;
@@ -103,12 +103,12 @@
 #X obj 756 554 - 100;
 #X obj 754 526 random 200;
 #X obj 349 899 *~ 0.8;
-#X obj 549 888 *~ 0.8;
+#X obj 540 910 *~ 0.8;
 #X obj 754 493 r \$0-grainbang;
 #X obj 777 603 r \$2-random_panning;
 #X obj 624 565 r \$2-global_pan;
 #X obj 617 838 r \$2-volume;
-#X obj 461 927 throw~ \$2-grainoutR;
+#X obj 525 1037 throw~ \$2-grainoutR;
 #X obj 653 673 +;
 #X obj 478 784 tabread \$2-hann;
 #X obj 721 776 tabread \$2-hann;
@@ -119,6 +119,12 @@
 #X obj 511 749 -;
 #X obj 533 679 t b f;
 #X msg 512 709 220.5;
+#X obj 333 625 tgl 25 0 empty empty empty 17 7 0 10 #e4e4e4 #4d4d4d #373737 0 1;
+#X obj 333 673 metro 20;
+#X obj 311 713 snapshot~;
+#X floatatom 311 742 14 0 0 0 - - - 16;
+#X obj 349 928 *~ 0.2;
+#X obj 541 989 *~ 0.2;
 #X connect 0 0 1 0;
 #X connect 1 0 89 0;
 #X connect 2 0 0 0;
@@ -231,8 +237,8 @@
 #X connect 100 0 110 0;
 #X connect 101 0 99 0;
 #X connect 102 0 101 0;
-#X connect 103 0 91 0;
-#X connect 104 0 109 0;
+#X connect 103 0 124 0;
+#X connect 104 0 125 0;
 #X connect 105 0 102 0;
 #X connect 106 0 100 1;
 #X connect 107 0 95 0;
@@ -250,3 +256,8 @@
 #X connect 118 0 119 0;
 #X connect 118 1 117 1;
 #X connect 119 0 117 0;
+#X connect 120 0 121 0;
+#X connect 121 0 122 0;
+#X connect 122 0 123 0;
+#X connect 124 0 91 0;
+#X connect 125 0 109 0;

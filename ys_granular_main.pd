@@ -1,5 +1,4 @@
 #N canvas 350 141 972 691 10;
-#X obj 28 179 hsl 175 15 0 1 0 0 \$1-sample_offset \$1-sample_offset_rcv sample\ offset -2 -4 1 10 #fffba5 #404040 #000000 0 1;
 #X obj 226 10 tgl 30 1 \$1-on_off \$1-on_off_rcv on/off 32 26 0 10 #9bc99d #000000 #000000 1 1;
 #X obj 225 44 tgl 30 1 \$1-record \$1-record_rcv record 32 26 1 10 #ffc7c6 #000000 #000000 0 1;
 #X obj 258 10 bng 15 250 50 0 \$1-play_one_grain \$1-play_one_grain_rcv play\ one 17 7 1 10 #9bc99d #000000 #000000;
@@ -19,14 +18,9 @@
 #X obj 232 339 vsl 35 60 0.01 1.4 1 1 \$1-volume \$1-volume_rcv empty -6 -9 1 10 #fcfcfc #000000 #000000 5498 1;
 #X obj 25 216 cnv 15 180 250 empty empty empty 20 12 0 14 #194b19 #404040 0;
 #X obj 234 425 hsl 75 15 0 1 0 1 \$1-random_panning \$1-random_panning_rcv panning\ random -2 -4 1 10 #ffffff #000000 #000000 740 1;
-#X obj 42 240 hsl 128 15 0 1 0 1 \$1-offset_random \$1-offset_random_rcv offset\ random -2 -4 1 10 #fffba5 #000000 #ffffff 6350 1;
-#X obj 42 305 hsl 128 15 0 1 0 1 \$1-grain_pitch \$1-grain_pitch_rcv pitch -2 -4 1 10 #9bc9dd #ffffff #ffffff 3175 1;
 #X obj 40 273 tgl 15 1 \$1-reverse \$1-reverse_rcv reverse 17 7 1 10 #9bc9dd #000000 #ffffff 0 1;
 #X obj 94 273 tgl 15 1 \$1-reverse_random \$1-reverse_random_rcv reverse\ random 17 7 1 10 #9bc9dd #000000 #ffffff 0 1;
 #X obj 173 305 bng 15 250 50 0 \$1-reset_pitch \$1-reset_pitch_rcv empty 17 7 1 10 #9bc9dd #000000 #000000;
-#X obj 43 336 hsl 128 15 0 1 0 1 \$1-random_pitch \$1-random_pitch_rcv pitch\ random -2 -4 1 10 #9bc9dd #ffffff #ffffff 1270 1;
-#X obj 43 371 hsl 128 15 0.001 1 0 1 \$1-grain_size \$1-grain_size_rcv grain\ size -2 -4 1 10 #eab8fe #ffffff #ffffff 1259 1;
-#X obj 42 402 hsl 128 15 0.002 1 0 1 \$1-grain_density \$1-grain_density_rcv grain\ density -2 -4 1 10 #eab8fe #ffffff #ffffff 1247 1;
 #X obj 43 429 hsl 128 15 0 1 0 1 \$1-grainplay_chance \$1-grainplay_chance_rcv grainplay\ chance -2 -4 1 10 #eab8fe #ffffff #ffffff 12700 1;
 #X obj 309 95 bng 10 250 50 0 \$1-clear \$1-clear_rcv clear\ array -53 5 1 10 #c7c6ff #000000 #2f004d;
 #X obj 258 44 tgl 15 1 \$1-recordLoop \$1-recordLoop_rcv liveGrains 16 8 1 10 #ffc7c6 #000000 #000000 0 1;
